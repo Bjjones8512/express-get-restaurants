@@ -3,6 +3,7 @@ const app = express();
 const Restaurant = require("../models/index")
 const db = require("../db/connection");
 
+app.use(express.json())
 //TODO: Create your GET Request Route Below: 
 // Route to get all restaurants
 app.get('/restaurants', async (req, res) => {
